@@ -1,0 +1,11 @@
+set clipboard+=unnamedplus
+
+set visualbell
+
+# move and search keeping cursor at the center
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+
+# moving lines in visual mode
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
